@@ -1,5 +1,5 @@
 /*+clearfix {*/
-UL.sf-menu:after
+ul.sf-menu:after
 {
 	content: ".";
 	display: block;
@@ -8,11 +8,11 @@ UL.sf-menu:after
 	visibility: hidden;
 	font-size: 0;
 }
-UL.sf-menu
+ul.sf-menu
 {
 	display: inline-block;
 }
-UL.sf-menu
+ul.sf-menu
 {
 /*\*/
 	display: block;
@@ -20,22 +20,22 @@ UL.sf-menu
 	-height: 1px;
 }
 /*+}*/
-BODY
+body
 {
 	width: 100%;
-	background-color: #F0F0F0;
+	background-color: #f0f0f0;
 	padding: 0;
 	margin: 20px auto 0;
 }
-/*Superfish 2.0 Reloaded*/
-UL.sf-menu, UL.sf-menu *
+/*superfish 2.0 reloaded*/
+ul.sf-menu, ul.sf-menu *
 {
-/*Reset the menu*/
+/*reset the menu*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-/*[clearfix]*/UL.sf-menu
+/*[clearfix]*/ul.sf-menu
 {
 	/*+placement:margin-auto 0px 0px;*/
 	margin-left: auto;
@@ -45,24 +45,24 @@ UL.sf-menu, UL.sf-menu *
 	top: 0px;
 	width: 500px;
 }
-UL.sf-menu
+ul.sf-menu
 {
 /*reset line heights*/
 	line-height: 1;
 }
-UL.sf-menu LI
+ul.sf-menu li
 {
 	float: left;
 	position: relative;
 	margin-right: 10px;
 }
-UL.sf-menu UL LI
+ul.sf-menu ul li
 {
-/*Set Submenu LI widths*/
+/*set submenu li widths*/
 	width: 100%;
 }
-/*First Level*/
-UL.sf-menu A
+/*first level*/
+ul.sf-menu a
 {
 	display: block;
 	position: relative;
@@ -72,36 +72,36 @@ UL.sf-menu A
 	border: 1px solid #888888;
 	line-height: 2em;
 }
-UL.sf-menu UL LI A
+ul.sf-menu ul li a
 {
 	margin-right: 0;
 }
-/** 2nd Level*/
-UL.sf-menu LI UL
+/** 2nd level*/
+ul.sf-menu li ul
 {
 	position: absolute;
 	top: 0;
 	display: none;
 	visibility: hidden;
 	top: 2.6em;
-/*top = Top Nav Bar height*/
+/*top = top nav bar height*/
 	width: 10em;
 	left: 0;
 }
-UL.sf-menu LI:hover UL, UL.sf-menu LI.sfHover UL
+ul.sf-menu li:hover ul, ul.sf-menu li.sfhover ul
 {
-/*Shows 2nd level / dropdown*/
+/*shows 2nd level / dropdown*/
 	visibility: visible;
 	display: inline-block;
 	z-index: 99;
 }
-UL.sf-menu LI:hover UL UL, UL.sf-menu LI.sfHover UL UL
+ul.sf-menu li:hover ul ul, ul.sf-menu li.sfhover ul ul
 {
-/*Hide 3rd level offscreen*/
+/*hide 3rd level offscreen*/
 	top: -999em;
 }
-/*3rd Level*/
-UL.sf-menu LI UL LI UL
+/*3rd level*/
+ul.sf-menu li ul li ul
 {
 	left: 10em;
 	display: none;
@@ -111,38 +111,38 @@ UL.sf-menu LI UL LI UL
 /*left = 1st level width*/
 	top: 0;
 }
-UL.sf-menu LI UL LI:hover > UL, UL.sf-menu LI UL LI.sfHover > UL
+ul.sf-menu li ul li:hover > ul, ul.sf-menu li ul li.sfhover > ul
 {
-/*Shows 3rd Level*/
+/*shows 3rd level*/
 	top: 0em;
 }
-UL.sf-menu LI UL LI UL LI UL
+ul.sf-menu li ul li ul li ul
 {
-/*Hide 4th level*/
+/*hide 4th level*/
 	top: -999em;
 }
-/*4th Level*/
-UL.sf-menu LI UL LI UL LI UL
+/*4th level*/
+ul.sf-menu li ul li ul li ul
 {
 	left: 10em;
-/*Last Level, just style, no superfish disclosure, just copy the above recipe to add more levels!*/
+/*last level, just style, no superfish disclosure, just copy the above recipe to add more levels!*/
 }
-UL.sf-menu LI UL LI UL LI:hover UL, UL.sf-menu LI UL LI UL LI.sfHover UL
+ul.sf-menu li ul li ul li:hover ul, ul.sf-menu li ul li ul li.sfhover ul
 {
-/*Show 4th Level*/
+/*show 4th level*/
 	top: 0em;
 }
-/*Hover State / XPath*/
-.sf-menu LI:hover, .sf-menu LI.sfHover, .sf-menu A:focus, .sf-menu A:hover, .sf-menu A:active
+/*hover state / xpath*/
+.sf-menu li:hover, .sf-menu li.sfhover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active
 {
 	outline: 0;
 }
-/*Arrows*/
-.sf-menu A.sf-with-ul
+/*arrows*/
+.sf-menu a.sf-with-ul
 {
 	padding-right: 2.25em;
 	min-width: 1px;
-/*trigger IE7 hasLayout so spans position accurately*/
+/*trigger ie7 haslayout so spans position accurately*/
 }
 .sf-sub-indicator
 {
@@ -157,25 +157,25 @@ UL.sf-menu LI UL LI UL LI:hover UL, UL.sf-menu LI UL LI UL LI.sfHover UL
 	background-position: -10px 0;
 	background: url('../images/arrows-ffffff.png') no-repeat -10px 0px;
 }
-.sf-menu LI.sfHover .sf-sub-indicator
+.sf-menu li.sfhover .sf-sub-indicator
 {
 	background-position: -10px -100px;
 }
-/*Submenu Arrows Right*/
-UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
+/*submenu arrows right*/
+ul.sf-menu li.sfhover ul li .sf-sub-indicator
 {
 	background-position: 0px 0px;
 }
-.sf-menu LI.sfHover LI.sfHover .sf-sub-indicator
+.sf-menu li.sfhover li.sfhover .sf-sub-indicator
 {
 	background-position: -10px 0px;
 }
-.sf-menu UL .sf-sub-indicator
+.sf-menu ul .sf-sub-indicator
 {
 	background-position: -10px 0;
 }
-/*THEMES*/
-#menu1 LI
+/*themes*/
+#menu1 li
 {
 	border: 0px solid #000000;
 	/*+border-radius:3px;*/
@@ -183,18 +183,18 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	-webkit-border-radius: 3px;
 	-khtml-border-radius: 3px;
 	border-radius: 3px 3px 3px 3px;
-	background-color: #C00505;
+	background-color: #c00505;
 	/*+text-shadow:1px 1px 1px #000;*/
 	-moz-text-shadow: 1px 1px 1px #000;
 	-webkit-text-shadow: 1px 1px 1px #000;
 	-o-text-shadow: 1px 1px 1px #000;
 	text-shadow: 1px 1px 1px #000;
 }
-#menu1 LI A
+#menu1 li a
 {
-	color: #FFF;
+	color: #fff;
 }
-#menu1 LI.sfHover UL LI.sfHover UL LI A
+#menu1 li.sfhover ul li.sfhover ul li a
 {
 	/*+border-radius:0px;*/
 	-moz-border-radius: 0px;
@@ -202,7 +202,7 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	-khtml-border-radius: 0px;
 	border-radius: 0px 0px 0px 0px;
 }
-#menu1.sf-menu.sf-js-enabled LI.sf-with-ul UL LI.sf-with-ul UL LI A
+#menu1.sf-menu.sf-js-enabled li.sf-with-ul ul li.sf-with-ul ul li a
 {
 	/*+border-radius:0;*/
 	-moz-border-radius: 0;
@@ -210,7 +210,7 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	-khtml-border-radius: 0;
 	border-radius: 0 0 0 0;
 }
-#menu1 .sfHover LI.sfHover:last-child A, #menu1.sf-js-enabled LI.sf-with-ul.sfHover UL LI.sf-with-ul.sfHover UL LI.sfHover:last-child A
+#menu1 .sfhover li.sfhover:last-child a, #menu1.sf-js-enabled li.sf-with-ul.sfhover ul li.sf-with-ul.sfhover ul li.sfhover:last-child a
 {
 	/*+border-radius:0 0 20px 20px;*/
 	-moz-border-radius: 0 0 20px 20px;
@@ -218,7 +218,7 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	-khtml-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
 }
-#menu1 .sfHover LI.sfHover:first-child A, #menu1.sf-js-enabled LI.sfHover UL LI.sf-with-ul UL LI.sfHover:first-child A
+#menu1 .sfhover li.sfhover:first-child a, #menu1.sf-js-enabled li.sfhover ul li.sf-with-ul ul li.sfhover:first-child a
 {
 	/*+border-radius:20px 20px 0 0;*/
 	-moz-border-radius: 20px 20px 0 0;
@@ -226,7 +226,7 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	-khtml-border-radius: 20px 20px 0 0;
 	border-radius: 20px 20px 0 0;
 }
-#menu1.sf-js-enabled LI.sf-with-ul.sfHover UL LI.sf-with-ul.sfHover UL LI.sfHover:last-child A
+#menu1.sf-js-enabled li.sf-with-ul.sfhover ul li.sf-with-ul.sfhover ul li.sfhover:last-child a
 {
 	/*+border-radius:0 0 20px 20px;*/
 	-moz-border-radius: 0 0 20px 20px;
@@ -234,21 +234,21 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	-khtml-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
 }
-#menu1 LI UL LI UL LI A
+#menu1 li ul li ul li a
 {
 	border-bottom: 1px solid #000000 !important;
 }
-#menu1 LI UL LI UL LI:last-child, #menu1 LI.sf-with-ul UL LI.sf-with-ul UL LI:last-child A
+#menu1 li ul li ul li:last-child, #menu1 li.sf-with-ul ul li.sf-with-ul ul li:last-child a
 {
 	border-bottom: 0px solid #000 !important;
 }
-#menu1 LI UL
+#menu1 li ul
 {
-	/*+box-shadow:5px 5px 10px #1A1A1A;*/
-	-moz-box-shadow: 5px 5px 10px #1A1A1A;
-	-webkit-box-shadow: 5px 5px 10px #1A1A1A;
-	-o-box-shadow: 5px 5px 10px #1A1A1A;
-	box-shadow: 5px 5px 10px #1A1A1A;
+	/*+box-shadow:5px 5px 10px #1a1a1a;*/
+	-moz-box-shadow: 5px 5px 10px #1a1a1a;
+	-webkit-box-shadow: 5px 5px 10px #1a1a1a;
+	-o-box-shadow: 5px 5px 10px #1a1a1a;
+	box-shadow: 5px 5px 10px #1a1a1a;
 	/*+border-radius:20px;*/
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -257,11 +257,11 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	border: 1px solid #000000;
 	background-color: #464646;
 }
-#menu1 .sfHover > A
+#menu1 .sfhover > a
 {
 	background-color: #000;
 }
-#menu1 LI UL LI
+#menu1 li ul li
 {
 	/*+border-radius:0px;*/
 	-moz-border-radius: 0px;
@@ -270,12 +270,12 @@ UL.sf-menu LI.sfHover UL LI .sf-sub-indicator
 	border-radius: 0px 0px 0px 0px;
 	background-color: transparent;
 }
-#menu1 LI UL LI A
+#menu1 li ul li a
 {
 	border: 0px solid #000000;
 	border-bottom: 1px solid #000000;
 }
-#menu1 LI UL LI:last-child A
+#menu1 li ul li:last-child a
 {
 	border-bottom: 0px solid #000000;
 }

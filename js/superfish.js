@@ -82,7 +82,6 @@
 					data.initialized = true;
 					//Parse jquery strings for out speed
 					if (typeof(o.speedOut) === 'string') o.speedOut = 600;
-					if ($.browser.msie && (parseInt($.browser.version) <= 6)) return;//Degrade to CSS menus for IE6
 					//make sure passed in element actually has submenus
 					if (data.uls.length == 0 ) {
 						if (typeof(console) != 'undefined') console.warn('no ul\'s found on parent menu item, exiting');

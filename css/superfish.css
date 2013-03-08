@@ -1,6 +1,6 @@
+/*[fmt]1A90-1A0B-6*/
 /*+clearfix {*/
-ul.sf-menu:after
-{
+ul.sf-menu:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -8,35 +8,153 @@ ul.sf-menu:after
 	visibility: hidden;
 	font-size: 0;
 }
-ul.sf-menu
-{
+
+ul.sf-menu {
 	display: inline-block;
 }
-ul.sf-menu
-{
+
+ul.sf-menu {
 /*\*/
 	display: block;
 /**/
 	-height: 1px;
 }
+
 /*+}*/
-body
-{
+body {
 	width: 100%;
-	background-color: #f0f0f0;
+	background-color: #F0F0F0;
 	padding: 0;
 	margin: 20px auto 0;
 }
-/*superfish 2.0 reloaded*/
-ul.sf-menu, ul.sf-menu *
-{
+
+/*superfish 2.0 reloaded
+demo themes*/
+#menu1 li {
+	border: 0px solid #000000;
+	/*+border-radius:3px;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	border-radius: 3px 3px 3px 3px;
+	background-color: #C00505;
+	/*+text-shadow:1px 1px 1px #000;*/
+	-moz-text-shadow: 1px 1px 1px #000;
+	-webkit-text-shadow: 1px 1px 1px #000;
+	-o-text-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#menu1 li a {
+	color: #FFF;
+}
+
+#menu1 li.sfhover ul li.sfhover ul li a {
+	/*+border-radius:0px;*/
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#menu1.sf-menu.sf-js-enabled li.sf-with-ul ul li.sf-with-ul ul li a {
+	/*+border-radius:0;*/
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-khtml-border-radius: 0;
+	border-radius: 0;
+	border-radius: 0 0 0 0;
+}
+
+#menu1 .sfhover li.sfhover:last-child a,
+#menu1.sf-js-enabled li.sf-with-ul.sfhover ul li.sf-with-ul.sfhover ul li.sfhover:last-child a {
+	/*+border-radius:0 0 20px 20px;*/
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+	-khtml-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+}
+
+#menu1 .sfhover li.sfhover:first-child a,
+#menu1.sf-js-enabled li.sfhover ul li.sf-with-ul ul li.sfhover:first-child a {
+	/*+border-radius:20px 20px 0 0;*/
+	-moz-border-radius: 20px 20px 0 0;
+	-webkit-border-radius: 20px 20px 0 0;
+	-khtml-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+}
+
+#menu1.sf-js-enabled li.sf-with-ul.sfhover ul li.sf-with-ul.sfhover ul li.sfhover:last-child a {
+	/*+border-radius:0 0 20px 20px;*/
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+	-khtml-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+}
+
+#menu1 li ul li ul li a {
+	border-bottom: 1px solid #000000;
+}
+
+#menu1 li ul li ul li:last-child,
+#menu1 li.sf-with-ul ul li.sf-with-ul ul li:last-child a {
+	border-bottom: 0px solid #000;
+}
+
+#menu1 li ul {
+	/*+box-shadow:5px 5px 10px #1A1A1A;*/
+	-moz-box-shadow: 5px 5px 10px #1A1A1A;
+	-webkit-box-shadow: 5px 5px 10px #1A1A1A;
+	-o-box-shadow: 5px 5px 10px #1A1A1A;
+	box-shadow: 5px 5px 10px #1A1A1A;
+	-moz-box-shadow: 5px 5px 10px #1a1a1a;
+	-webkit-box-shadow: 5px 5px 10px #1a1a1a;
+	-o-box-shadow: 5px 5px 10px #1a1a1a;
+	/*+border-radius:20px;*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	border-radius: 20px 20px 20px 20px;
+	border: 1px solid #000000;
+	background-color: #464646;
+}
+
+#menu1 .sfhover > a {
+	background-color: #000;
+}
+
+#menu1 li ul li {
+	/*+border-radius:0px;*/
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+	border-radius: 0px 0px 0px 0px;
+	background-color: transparent;
+}
+
+#menu1 li ul li a {
+	border: 0px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+#menu1 li ul li:last-child a {
+	border-bottom: 0px solid #000000;
+}
+
+/*End theme*/
+ul.sf-menu,
+ul.sf-menu * {
 /*reset the menu*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-/*[clearfix]*/ul.sf-menu
-{
+
+/*[clearfix]*/ul.sf-menu {
 	/*+placement:margin-auto 0px 0px;*/
 	margin-left: auto;
 	margin-right: auto;
@@ -45,107 +163,30 @@ ul.sf-menu, ul.sf-menu *
 	top: 0px;
 	width: 500px;
 }
-ul.sf-menu
-{
+
+ul.sf-menu {
 /*reset line heights*/
 	line-height: 1;
 }
-ul.sf-menu li
-{
-	float: left;
-	position: relative;
-	margin-right: 10px;
+
+.sf-menu ul .sf-sub-indicator {
+	background-position: -10px 0;
 }
-ul.sf-menu ul li
-{
-/*set submenu li widths*/
-	width: 100%;
+
+.sf-menu li.sfhover li.sfhover .sf-sub-indicator {
+	background-position: -10px 0px;
 }
-/*first level*/
-ul.sf-menu a
-{
-	display: block;
-	position: relative;
-	padding: 0.3em 20px;
-	text-decoration: none;
-	color: #000;
-	border: 1px solid #888888;
-	line-height: 2em;
+
+ul.sf-menu li.sfhover ul li .sf-sub-indicator {
+	background-position: 0px 0px;
 }
-ul.sf-menu ul li a
-{
-	margin-right: 0;
+
+/*submenu arrows right*/
+.sf-menu li.sfhover .sf-sub-indicator {
+	background-position: -10px -100px;
 }
-/** 2nd level*/
-ul.sf-menu li ul
-{
-	position: absolute;
-	top: 0;
-	display: none;
-	visibility: hidden;
-	top: 2.6em;
-/*top = top nav bar height*/
-	width: 10em;
-	left: 0;
-}
-ul.sf-menu li:hover ul, ul.sf-menu li.sfhover ul
-{
-/*shows 2nd level / dropdown*/
-	visibility: visible;
-	display: inline-block;
-	z-index: 99;
-}
-ul.sf-menu li:hover ul ul, ul.sf-menu li.sfhover ul ul
-{
-/*hide 3rd level offscreen*/
-	top: -999em;
-}
-/*3rd level*/
-ul.sf-menu li ul li ul
-{
-	left: 10em;
-	display: none;
-	visibility: hidden;
-	top: 0em;
-	left: 10em;
-/*left = 1st level width*/
-	top: 0;
-}
-ul.sf-menu li ul li:hover > ul, ul.sf-menu li ul li.sfhover > ul
-{
-/*shows 3rd level*/
-	top: 0em;
-}
-ul.sf-menu li ul li ul li ul
-{
-/*hide 4th level*/
-	top: -999em;
-}
-/*4th level*/
-ul.sf-menu li ul li ul li ul
-{
-	left: 10em;
-/*last level, just style, no superfish disclosure, just copy the above recipe to add more levels!*/
-}
-ul.sf-menu li ul li ul li:hover ul, ul.sf-menu li ul li ul li.sfhover ul
-{
-/*show 4th level*/
-	top: 0em;
-}
-/*hover state / xpath*/
-.sf-menu li:hover, .sf-menu li.sfhover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active
-{
-	outline: 0;
-}
-/*arrows*/
-.sf-menu a.sf-with-ul
-{
-	padding-right: 2.25em;
-	min-width: 1px;
-/*trigger ie7 haslayout so spans position accurately*/
-}
-.sf-sub-indicator
-{
+
+.sf-sub-indicator {
 	position: absolute;
 	display: block;
 	right: 0.55em;
@@ -157,126 +198,106 @@ ul.sf-menu li ul li ul li:hover ul, ul.sf-menu li ul li ul li.sfhover ul
 	background-position: -10px 0;
 	background: url('../images/arrows-ffffff.png') no-repeat -10px 0px;
 }
-.sf-menu li.sfhover .sf-sub-indicator
-{
-	background-position: -10px -100px;
-}
-/*submenu arrows right*/
-ul.sf-menu li.sfhover ul li .sf-sub-indicator
-{
-	background-position: 0px 0px;
-}
-.sf-menu li.sfhover li.sfhover .sf-sub-indicator
-{
-	background-position: -10px 0px;
-}
-.sf-menu ul .sf-sub-indicator
-{
-	background-position: -10px 0;
+
+.sf-menu a.sf-with-ul {
+	padding-right: 2.25em;
+	min-width: 1px;
+/*trigger ie7 haslayout so spans position accurately*/
 }
 
-/*themes*/
-#menu1 li
-{
-	border: 0px solid #000000;
-	/*+border-radius:3px;*/
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-khtml-border-radius: 3px;
-	border-radius: 3px 3px 3px 3px;
-	background-color: #c00505;
-	/*+text-shadow:1px 1px 1px #000;*/
-	-moz-text-shadow: 1px 1px 1px #000;
-	-webkit-text-shadow: 1px 1px 1px #000;
-	-o-text-shadow: 1px 1px 1px #000;
-	text-shadow: 1px 1px 1px #000;
+/*arrows*/
+.sf-menu li:hover,
+.sf-menu li.sfhover,
+.sf-menu a:focus,
+.sf-menu a:hover,
+.sf-menu a:active {
+	outline: 0;
 }
-#menu1 li a
-{
-	color: #fff;
+
+/*hover state / xpath*/
+ul.sf-menu li ul li ul li:hover ul,
+ul.sf-menu li ul li ul li.sfhover ul {
+/*show 4th level*/
+	top: 0em;
 }
-#menu1 li.sfhover ul li.sfhover ul li a
-{
-	/*+border-radius:0px;*/
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-khtml-border-radius: 0px;
-	border-radius: 0px 0px 0px 0px;
+
+ul.sf-menu li ul li ul li ul {
+	left: 10em;
+/*last level, just style, no superfish disclosure, just copy the above recipe to add more levels!*/
 }
-#menu1.sf-menu.sf-js-enabled li.sf-with-ul ul li.sf-with-ul ul li a
-{
-	/*+border-radius:0;*/
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	-khtml-border-radius: 0;
-	border-radius: 0 0 0 0;
+
+/*4th level*/
+ul.sf-menu li ul li ul li ul {
+/*hide 4th level*/
+	top: -999em;
 }
-#menu1 .sfhover li.sfhover:last-child a, #menu1.sf-js-enabled li.sf-with-ul.sfhover ul li.sf-with-ul.sfhover ul li.sfhover:last-child a
-{
-	/*+border-radius:0 0 20px 20px;*/
-	-moz-border-radius: 0 0 20px 20px;
-	-webkit-border-radius: 0 0 20px 20px;
-	-khtml-border-radius: 0 0 20px 20px;
-	border-radius: 0 0 20px 20px;
+
+ul.sf-menu li ul li:hover > ul,
+ul.sf-menu li ul li.sfhover > ul {
+/*shows 3rd level*/
+	top: 0em;
 }
-#menu1 .sfhover li.sfhover:first-child a, #menu1.sf-js-enabled li.sfhover ul li.sf-with-ul ul li.sfhover:first-child a
-{
-	/*+border-radius:20px 20px 0 0;*/
-	-moz-border-radius: 20px 20px 0 0;
-	-webkit-border-radius: 20px 20px 0 0;
-	-khtml-border-radius: 20px 20px 0 0;
-	border-radius: 20px 20px 0 0;
+
+ul.sf-menu li ul li ul {
+	left: 10em;
+	display: none;
+	visibility: hidden;
+	top: 0em;
+	left: 10em;
+/*left = 1st level width*/
+	top: 0;
 }
-#menu1.sf-js-enabled li.sf-with-ul.sfhover ul li.sf-with-ul.sfhover ul li.sfhover:last-child a
-{
-	/*+border-radius:0 0 20px 20px;*/
-	-moz-border-radius: 0 0 20px 20px;
-	-webkit-border-radius: 0 0 20px 20px;
-	-khtml-border-radius: 0 0 20px 20px;
-	border-radius: 0 0 20px 20px;
+
+/*3rd level*/
+ul.sf-menu li:hover ul ul,
+ul.sf-menu li.sfhover ul ul {
+/*hide 3rd level offscreen*/
+	top: -999em;
 }
-#menu1 li ul li ul li a
-{
-	border-bottom: 1px solid #000000 !important;
+
+ul.sf-menu li:hover ul,
+ul.sf-menu li.sfhover ul {
+/*shows 2nd level / dropdown*/
+	visibility: visible;
+	display: inline-block;
+	z-index: 99;
 }
-#menu1 li ul li ul li:last-child, #menu1 li.sf-with-ul ul li.sf-with-ul ul li:last-child a
-{
-	border-bottom: 0px solid #000 !important;
+
+ul.sf-menu li ul {
+	position: absolute;
+	top: 0;
+	display: none;
+	visibility: hidden;
+	top: 2.6em;
+/*top = top nav bar height*/
+	width: 10em;
+	left: auto;
 }
-#menu1 li ul
-{
-	/*+box-shadow:5px 5px 10px #1a1a1a;*/
-	-moz-box-shadow: 5px 5px 10px #1a1a1a;
-	-webkit-box-shadow: 5px 5px 10px #1a1a1a;
-	-o-box-shadow: 5px 5px 10px #1a1a1a;
-	box-shadow: 5px 5px 10px #1a1a1a;
-	/*+border-radius:20px;*/
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-khtml-border-radius: 20px;
-	border-radius: 20px 20px 20px 20px;
-	border: 1px solid #000000;
-	background-color: #464646;
+
+/** 2nd level*/
+ul.sf-menu ul li a {
+	margin-right: 0;
 }
-#menu1 .sfhover > a
-{
-	background-color: #000;
+
+ul.sf-menu a {
+	display: block;
+	position: relative;
+	padding: 0.3em 20px;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #888888;
+	line-height: 2em;
 }
-#menu1 li ul li
-{
-	/*+border-radius:0px;*/
-	-moz-border-radius: 0px;
-	-webkit-border-radius: 0px;
-	-khtml-border-radius: 0px;
-	border-radius: 0px 0px 0px 0px;
-	background-color: transparent;
+
+/*first level*/
+ul.sf-menu ul li {
+/*set submenu li widths*/
+	width: 100%;
 }
-#menu1 li ul li a
-{
-	border: 0px solid #000000;
-	border-bottom: 1px solid #000000;
+
+ul.sf-menu li {
+	float: left;
+	position: relative;
+	margin-right: 10px;
 }
-#menu1 li ul li:last-child a
-{
-	border-bottom: 0px solid #000000;
-}
+
